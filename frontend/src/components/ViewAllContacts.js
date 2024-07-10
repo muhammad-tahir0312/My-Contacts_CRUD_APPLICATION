@@ -9,7 +9,7 @@ const ViewAllContacts = () => {
   const token = JSON.parse(auth).token;
 
   const fetchData = async () => {
-    const response = await fetch("http://localhost:3001/api/contacts", {
+    const response = await fetch("https://my-contacts-backend-w86c.onrender.com/api/contacts", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ const ViewAllContacts = () => {
 }
 
   const handleDelete = async (id) =>{
-    const response = await fetch(`http://localhost:3001/api/contacts/${id}`, {
+    const response = await fetch(`https://my-contacts-backend-w86c.onrender.com/api/contacts/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
