@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 // Corrected CORS configuration
 app.use(cors({
-  origin: "https://hotel-backend-xi.vercel.app",
+  origin: "https://my-contacts-crud-application-backend.vercel.app/",
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
