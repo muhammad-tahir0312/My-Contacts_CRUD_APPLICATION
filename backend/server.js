@@ -7,12 +7,7 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Corrected CORS configuration
-app.use(cors({
-  origin: "https://my-contacts-crud-application-backend.vercel.app/",
-  methods: ["POST", "GET", "DELETE", "PUT"],
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 app.use("/api/contacts", require("./routers/contacts"));
