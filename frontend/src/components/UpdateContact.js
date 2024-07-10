@@ -14,7 +14,7 @@ const UpdateContact = () => {
 
   const ViewDetails = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/contacts/${id}`, {
+      const response = await fetch(`https://my-contacts-backend-w86c.onrender.com/api/contacts/${id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ const UpdateContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3001/api/contacts/${id}`, {
+      const response = await fetch(`https://my-contacts-backend-w86c.onrender.com/api/contacts/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
