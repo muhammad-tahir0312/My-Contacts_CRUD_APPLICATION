@@ -9,7 +9,7 @@ const MyProfile = () => {
     const token = JSON.parse(auth).token
 
     const handleUpdate = asynchandler( async () => {
-        const response = await fetch('http://localhost:3001/api/users/current', {
+        const response = await fetch('https://my-contacts-backend-w86c.onrender.com/api/users/current', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
