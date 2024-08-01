@@ -12,7 +12,7 @@ const ViewContact = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`https://my-contacts-backend-w86c.onrender.com/api/contacts/${id}`, {
+      const response = await fetch(`http://localhost:3000/api/contacts/${id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

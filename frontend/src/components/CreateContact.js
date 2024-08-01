@@ -12,7 +12,7 @@ const CreateContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("https://my-contacts-backend-w86c.onrender.com/api/contacts", {
+      const response = await fetch("http://localhost:3000/api/contacts", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 
 // Middleware to validate JWT token
 
-const validateToken = asyncHandler(async (req, res, next) => {
+const validateToken = asyncHandler( async (req, res, next) => {
     let token;
     let AuthHeader = req.headers.authorization || req.headers.Authorization;
     if (

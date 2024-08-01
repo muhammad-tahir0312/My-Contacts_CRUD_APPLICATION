@@ -63,4 +63,4 @@ const current = asyncHandler( async (req,res) =>{
     res.json(req.user);
 })
 
-module.exports ={register, login, current}
+module.exports ={register, login, current, okie}

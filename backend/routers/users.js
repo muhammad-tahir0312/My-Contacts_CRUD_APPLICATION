@@ -1,7 +1,8 @@
 const express= require("express")
 const routers= express.Router();
-const {register, login, current} = require("../controllers/usersController")
-const validateToken = require("../middleware/validateTokenHandler")
+const {register, login, current, okie} = require("../controllers/usersController")
+const validateToken = require("../middleware/validateTokenHandler");
+const { route } = require("./contacts");
 
 routers.route("/register").post(register)
 

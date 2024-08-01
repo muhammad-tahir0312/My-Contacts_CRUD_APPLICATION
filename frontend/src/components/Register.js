@@ -16,7 +16,7 @@ const Register = () => {
 
     const display = async () => {
         try {
-            const response = await fetch('https://my-contacts-backend-w86c.onrender.com/api/users/register', {
+            const response = await fetch('http://localhost:3000/api/users/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
